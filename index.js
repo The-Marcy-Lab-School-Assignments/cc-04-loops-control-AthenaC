@@ -43,13 +43,14 @@ betweenFiveAndTwenty(100) // returns false
 // 5 not finished
 const sumOfThreeOrFive = () => {
     let sum = 0;
-    for (i = 1; i < 1000; i++) {
+    for (let i = 1; i < 1000; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
             sum += i;
         };
     };
+    return sum;
 };
-console.log(sumOfThreeOrFive()); //returns 233168
+sumOfThreeOrFive(); //returns 233168
 
 // 6
 const isAllLowerCase = (str) => {
